@@ -23,13 +23,13 @@ internal class JournalOfStudentPerformanceConfiguration : IEntityTypeConfigurati
 
         builder
             .HasOne(sp => sp.Lesson)
-            .WithMany(nameof(StudentPerformanceDb))
+            .WithMany()
             .HasForeignKey(sp => sp.LessonId)
             .OnDelete(DeleteBehavior.NoAction);
 
         builder
             .HasOne(sp => sp.Student)
-            .WithMany(nameof(StudentPerformanceDb))
+            .WithMany()
             .HasForeignKey(sp => sp.StudentId)
             .OnDelete(DeleteBehavior.NoAction);
     }

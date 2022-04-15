@@ -11,12 +11,11 @@ internal class HomeworkWithMarkConfiguration : IEntityTypeConfiguration<Homework
         builder.HasKey(hm => hm.Id);
 
         builder.Property(hm => hm.Mark).IsRequired();
-        builder.Property(hm => hm.Homework).IsRequired();
         builder.Property(hm => hm.HomeworkId).IsRequired();
 
         builder
             .HasOne(hm => hm.Homework)
-            .WithMany(nameof(HomeworkWithMarkDb))
+            .WithMany()
             .HasForeignKey(hm => hm.HomeworkId)
             .OnDelete(DeleteBehavior.NoAction);
     }

@@ -16,7 +16,7 @@ internal class LessonConfiguration : IEntityTypeConfiguration<LessonDb>
 
         builder
             .HasOne(l => l.Teacher)
-            .WithMany(nameof(LessonDb))
+            .WithMany()
             .HasForeignKey(l => l.TeacherId)
             .OnDelete(DeleteBehavior.NoAction);
     }
