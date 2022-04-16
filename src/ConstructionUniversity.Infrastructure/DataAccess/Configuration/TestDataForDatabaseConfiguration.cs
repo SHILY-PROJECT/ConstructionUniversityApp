@@ -51,31 +51,20 @@ internal static class TestDataForDatabaseConfiguration
         var homework8 = new HomeworkDb { Id = Guid.NewGuid(), Name = $"Homework by '{lesson8.Name}'" };
         var homework9 = new HomeworkDb { Id = Guid.NewGuid(), Name = $"Homework by '{lesson9.Name}'" };
 
-        var homeworkWithMark1 = new HomeworkWithMarkDb { Id = Guid.NewGuid(), HomeworkId = homework1.Id, Mark = 3 };
-        var homeworkWithMark2 = new HomeworkWithMarkDb { Id = Guid.NewGuid(), HomeworkId = homework1.Id, Mark = 4 };
-        var homeworkWithMark3 = new HomeworkWithMarkDb { Id = Guid.NewGuid(), HomeworkId = homework1.Id, Mark = 4 };
-        var homeworkWithMark4 = new HomeworkWithMarkDb { Id = Guid.NewGuid(), HomeworkId = homework2.Id, Mark = 3 };
-        var homeworkWithMark5 = new HomeworkWithMarkDb { Id = Guid.NewGuid(), HomeworkId = homework2.Id, Mark = 2 };
-        var homeworkWithMark6 = new HomeworkWithMarkDb { Id = Guid.NewGuid(), HomeworkId = homework2.Id, Mark = 0 };
-        var homeworkWithMark7 = new HomeworkWithMarkDb { Id = Guid.NewGuid(), HomeworkId = homework3.Id, Mark = 5 };
-        var homeworkWithMark8 = new HomeworkWithMarkDb { Id = Guid.NewGuid(), HomeworkId = homework3.Id, Mark = 4 };
-        var homeworkWithMark9 = new HomeworkWithMarkDb { Id = Guid.NewGuid(), HomeworkId = homework3.Id, Mark = 3 };
-
-        var studentPerformance1 = new StudentPerformanceDb { Id = Guid.NewGuid(), StudentId = student1.Id, LessonId = lesson1.Id, HomeworkWithMarkId = homeworkWithMark1.Id, IsWas = true };
-        var studentPerformance2 = new StudentPerformanceDb { Id = Guid.NewGuid(), StudentId = student2.Id, LessonId = lesson1.Id, HomeworkWithMarkId = homeworkWithMark2.Id, IsWas = true };
-        var studentPerformance3 = new StudentPerformanceDb { Id = Guid.NewGuid(), StudentId = student3.Id, LessonId = lesson1.Id, HomeworkWithMarkId = homeworkWithMark3.Id, IsWas = false };
-        var studentPerformance4 = new StudentPerformanceDb { Id = Guid.NewGuid(), StudentId = student1.Id, LessonId = lesson2.Id, HomeworkWithMarkId = homeworkWithMark4.Id, IsWas = true };
-        var studentPerformance5 = new StudentPerformanceDb { Id = Guid.NewGuid(), StudentId = student2.Id, LessonId = lesson2.Id, HomeworkWithMarkId = homeworkWithMark5.Id, IsWas = true };
-        var studentPerformance6 = new StudentPerformanceDb { Id = Guid.NewGuid(), StudentId = student3.Id, LessonId = lesson2.Id, HomeworkWithMarkId = homeworkWithMark6.Id, IsWas = false };
-        var studentPerformance7 = new StudentPerformanceDb { Id = Guid.NewGuid(), StudentId = student1.Id, LessonId = lesson3.Id, HomeworkWithMarkId = homeworkWithMark7.Id, IsWas = true };
-        var studentPerformance8 = new StudentPerformanceDb { Id = Guid.NewGuid(), StudentId = student2.Id, LessonId = lesson3.Id, HomeworkWithMarkId = homeworkWithMark8.Id, IsWas = true };
-        var studentPerformance9 = new StudentPerformanceDb { Id = Guid.NewGuid(), StudentId = student3.Id, LessonId = lesson3.Id, HomeworkWithMarkId = homeworkWithMark9.Id, IsWas = false };
+        var studentPerformance1 = new StudentPerformanceDb { Id = Guid.NewGuid(), StudentId = student1.Id, LessonId = lesson1.Id, HomeworkId = homework1.Id, IsWas = true, Mark = 3 };
+        var studentPerformance2 = new StudentPerformanceDb { Id = Guid.NewGuid(), StudentId = student2.Id, LessonId = lesson1.Id, HomeworkId = homework2.Id, IsWas = true, Mark = 4 };
+        var studentPerformance3 = new StudentPerformanceDb { Id = Guid.NewGuid(), StudentId = student3.Id, LessonId = lesson1.Id, HomeworkId = homework3.Id, IsWas = false, Mark = 4 };
+        var studentPerformance4 = new StudentPerformanceDb { Id = Guid.NewGuid(), StudentId = student1.Id, LessonId = lesson2.Id, HomeworkId = homework4.Id, IsWas = true, Mark = 3 };
+        var studentPerformance5 = new StudentPerformanceDb { Id = Guid.NewGuid(), StudentId = student2.Id, LessonId = lesson2.Id, HomeworkId = homework5.Id, IsWas = true, Mark = 2 };
+        var studentPerformance6 = new StudentPerformanceDb { Id = Guid.NewGuid(), StudentId = student3.Id, LessonId = lesson2.Id, HomeworkId = homework6.Id, IsWas = false, Mark = 0 };
+        var studentPerformance7 = new StudentPerformanceDb { Id = Guid.NewGuid(), StudentId = student1.Id, LessonId = lesson3.Id, HomeworkId = homework7.Id, IsWas = true, Mark = 5 };
+        var studentPerformance8 = new StudentPerformanceDb { Id = Guid.NewGuid(), StudentId = student2.Id, LessonId = lesson3.Id, HomeworkId = homework8.Id, IsWas = true, Mark = 4 };
+        var studentPerformance9 = new StudentPerformanceDb { Id = Guid.NewGuid(), StudentId = student3.Id, LessonId = lesson3.Id, HomeworkId = homework9.Id, IsWas = false, Mark = 3 };
 
         modelBuilder.Entity<TeacherDb>().HasData(teacher1, teacher2, teacher3, teacher4, teacher5, teacher6, teacher7, teacher8, teacher9);
         modelBuilder.Entity<StudentDb>().HasData(student1, student2, student3, student4, student5, student6, student7, student8, student9);
         modelBuilder.Entity<LessonDb>().HasData(lesson1, lesson2, lesson3, lesson4, lesson5, lesson6, lesson7, lesson8, lesson9);
         modelBuilder.Entity<HomeworkDb>().HasData(homework1, homework2, homework3, homework4, homework5, homework6, homework7, homework8, homework9);
-        modelBuilder.Entity<HomeworkWithMarkDb>().HasData(homeworkWithMark1, homeworkWithMark2, homeworkWithMark3, homeworkWithMark4, homeworkWithMark5, homeworkWithMark6, homeworkWithMark7, homeworkWithMark8, homeworkWithMark9);
         modelBuilder.Entity<StudentPerformanceDb>().HasData(studentPerformance1, studentPerformance2, studentPerformance3, studentPerformance4, studentPerformance5, studentPerformance6, studentPerformance7, studentPerformance8, studentPerformance9);
 
         return modelBuilder;

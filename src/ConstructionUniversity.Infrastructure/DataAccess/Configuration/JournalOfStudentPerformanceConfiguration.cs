@@ -16,9 +16,9 @@ internal class JournalOfStudentPerformanceConfiguration : IEntityTypeConfigurati
         builder.Property(sp => sp.IsWas).IsRequired();
 
         builder
-            .HasOne(sp => sp.HomeworkWithMark)
-            .WithOne(h => h.StudentPerformance)
-            .HasForeignKey<StudentPerformanceDb>(sp => sp.HomeworkWithMarkId)
+            .HasOne(sp => sp.Homework)
+            .WithMany()
+            .HasForeignKey(sp => sp.HomeworkId)
             .OnDelete(DeleteBehavior.NoAction);
 
         builder

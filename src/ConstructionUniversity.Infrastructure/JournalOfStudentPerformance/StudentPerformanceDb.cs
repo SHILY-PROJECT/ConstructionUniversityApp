@@ -9,13 +9,14 @@ internal record StudentPerformanceDb : IGuidProperty
 {
     public Guid Id { get; init; }
     public bool IsWas { get; init; }
+    public int Mark { get; init; }
 
     public Guid StudentId { get; init; }
     public StudentDb Student { get; init; }
 
+    public Guid HomeworkId { get; init; }
+    public HomeworkDb Homework { get; init; }
+
     public Guid LessonId { get; init; }
     public LessonDb Lesson { get; init; }
-
-    public Guid HomeworkWithMarkId { get; init; }
-    public HomeworkWithMarkDb HomeworkWithMark { get; init; }
 }

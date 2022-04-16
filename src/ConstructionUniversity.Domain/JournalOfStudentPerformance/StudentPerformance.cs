@@ -8,6 +8,7 @@ public record StudentPerformance
 {
     public Guid Id { get; init; }
     public bool IsWas { get; init; }
+    public int Mark { get; init; }
     public Student Student { get; init; } = null!;
     public Lesson Lesson { get; init; } = null!;
     public Homework? Homework { get; init; }
