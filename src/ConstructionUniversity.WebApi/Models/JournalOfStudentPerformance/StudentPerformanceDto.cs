@@ -1,6 +1,9 @@
-﻿using System;
+﻿using ConstructionUniversity.WebApi.Models.Homeworks;
+using ConstructionUniversity.WebApi.Models.Lessons;
+using ConstructionUniversity.WebApi.Models.Students;
+using System;
 
-namespace ConstructionUniversity.WebApi.Models;
+namespace ConstructionUniversity.WebApi.Models.JournalOfStudentPerformance;
 
 public record StudentPerformanceDto
 {

@@ -1,6 +1,7 @@
-﻿using System;
+﻿using ConstructionUniversity.WebApi.Models.Teachers;
+using System;
 
-namespace ConstructionUniversity.WebApi.Models;
+namespace ConstructionUniversity.WebApi.Models.Lessons;
 
 public record LessonDto
 {

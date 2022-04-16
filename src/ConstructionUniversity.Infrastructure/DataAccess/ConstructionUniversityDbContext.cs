@@ -4,8 +4,8 @@ using ConstructionUniversity.Infrastructure.Students;
 using ConstructionUniversity.Infrastructure.Teachers;
 using ConstructionUniversity.Infrastructure.Lessons;
 using ConstructionUniversity.Infrastructure.Homeworks;
-using ConstructionUniversity.Infrastructure.JournalOfStudentPerformance;
 using ConstructionUniversity.Infrastructure.DataAccess.Configuration;
+using ConstructionUniversity.Infrastructure.JournalOfStudentPerformance;
 
 namespace ConstructionUniversity.Infrastructure.DataAccess;
 

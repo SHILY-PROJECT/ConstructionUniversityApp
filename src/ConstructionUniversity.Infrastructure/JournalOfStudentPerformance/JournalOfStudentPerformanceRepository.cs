@@ -1,7 +1,7 @@
 ﻿using AutoMapper;
 using Microsoft.EntityFrameworkCore;
-using ConstructionUniversity.Infrastructure.Common;
 using ConstructionUniversity.Domain.JournalOfStudentPerformance;
+using ConstructionUniversity.Infrastructure.Common;
 using ConstructionUniversity.Infrastructure.DataAccess;
 
 namespace ConstructionUniversity.Infrastructure.JournalOfStudentPerformance;

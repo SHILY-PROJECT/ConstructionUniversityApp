@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace ConstructionUniversity.WebApi.Models;
+namespace ConstructionUniversity.WebApi.Models.Homeworks;
 
 public record HomeworkDto
 {

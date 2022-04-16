@@ -1,8 +1,8 @@
 ﻿using System;
 
-namespace ConstructionUniversity.WebApi.Models;
+namespace ConstructionUniversity.WebApi.Models.Teachers;
 
-public record StudentDto
+public record TeacherDto
 {
     public Guid Id { get; init; }
     public string FirstName { get; init; } = string.Empty;
