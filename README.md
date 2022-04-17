@@ -2,8 +2,8 @@
 
 ## Стек
 - ASP.NET Core 6.0
-- Entity Framework Core
 - MS SQL Server
+- Entity Framework Core
 - Automapper
 - FluentValidation
 
