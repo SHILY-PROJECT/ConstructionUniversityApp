@@ -17,7 +17,7 @@
   <ItemGroup>
     <ProjectReference Include="..\ConstructionUniversity.Application\ConstructionUniversity.Application.csproj" />
     <ProjectReference Include="..\ConstructionUniversity.Domain\ConstructionUniversity.Domain.csproj" />
-    <ProjectReference Include="..\ConstructionUniversity.Infrastructure\ConstructionUniversity.Infrastructure.csproj" />
+    <ProjectReference Include="..\ConstructionUniversity.Infrastructure.Sql\ConstructionUniversity.Infrastructure.Sql.csproj" />
   </ItemGroup>
 
 </Project>

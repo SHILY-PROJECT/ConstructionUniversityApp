@@ -9,7 +9,7 @@ using ConstructionUniversity.WebApi.Models.Homeworks;
 namespace ConstructionUniversity.WebApi.Controllers;
 
 [ApiController]
-[Route("/api/homework")]
+[Route("/api/homeworks")]
 public class HomeworkController : ControllerBase
 {
     private readonly IHomeworkService _service;

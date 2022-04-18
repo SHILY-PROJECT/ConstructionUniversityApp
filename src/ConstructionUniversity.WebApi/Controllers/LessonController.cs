@@ -9,7 +9,7 @@ using ConstructionUniversity.WebApi.Models.Lessons;
 namespace ConstructionUniversity.WebApi.Controllers;
 
 [ApiController]
-[Route("/api/lesson")]
+[Route("/api/lessons")]
 public class LessonController : ControllerBase
 {
     private readonly ILessonService _service;

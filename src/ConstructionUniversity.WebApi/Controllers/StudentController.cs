@@ -10,7 +10,7 @@ using ConstructionUniversity.WebApi.Models.Students;
 namespace ConstructionUniversity.WebApi.Controllers;
 
 [ApiController]
-[Route("/api/student")]
+[Route("/api/students")]
 public class StudentController : ControllerBase
 {
     private readonly IStudentService _service;

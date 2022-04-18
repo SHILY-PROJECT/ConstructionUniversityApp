@@ -5,9 +5,9 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using FluentValidation.AspNetCore;
-using ConstructionUniversity.Infrastructure.Common;
+using ConstructionUniversity.Infrastructure.Sql.Common;
 using ConstructionUniversity.Application.Configuration;
-using ConstructionUniversity.Infrastructure.Configuration;
+using ConstructionUniversity.Infrastructure.Sql.Configuration;
 using ConstructionUniversity.WebApi.Configuration;
 
 namespace ConstructionUniversity.WebApi;
