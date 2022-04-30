@@ -27,11 +27,11 @@ internal class ConstructionUniversityDbContext : DbContext
         Database.EnsureCreated();
     }
 
-    public DbSet<TeacherDb> Teachers { get; set; } = null!;
-    public DbSet<StudentDb> Students { get; set; } = null!;
-    public DbSet<LessonDb> Lessons { get; set; } = null!;
-    public DbSet<HomeworkDb> Homeworks { get; set; } = null!;
-    public DbSet<StudentPerformanceDb> JournalOfStudentPerformance { get; set; } = null!;
+    public DbSet<TeacherDb> Teachers { get; set; }
+    public DbSet<StudentDb> Students { get; set; }
+    public DbSet<LessonDb> Lessons { get; set; }
+    public DbSet<HomeworkDb> Homeworks { get; set; }
+    public DbSet<StudentPerformanceDb> JournalOfStudentPerformance { get; set; }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
